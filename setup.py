@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
     setuptools.setup(
      name='pydrip',
-     version='0.1.5',
+     version='0.1.6',
      author="Matthew Clarkson",
      author_email="mpclarkson@gmail.com",
      description="A Python 3 client for the Drip API.",
