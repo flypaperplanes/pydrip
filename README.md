@@ -31,7 +31,21 @@ drip.create_or_update_subscriber(subscriber)
 
 ```
 
-About 90% of the API is covered.
+## Coverage
+
+Most of the Drip API is covered including:
+
+- Broadcasts
+- Campaigns
+- Custom Fields
+- Conversions
+- Events
+- Forms
+- Orders
+- Shopper Activity (new)
+- Subscribers
+- Tags
+- Webhooks
 
 ## Todo
 - Documentation
