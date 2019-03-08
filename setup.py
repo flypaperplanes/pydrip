@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
     setuptools.setup(
      name='pydrip',
-     version='0.1.8',
+     version='0.1.9',
      author="Matthew Clarkson",
      author_email="mpclarkson@gmail.com",
      description="A Python 3 client for the Drip API.",
@@ -17,4 +17,7 @@ with open("README.md", "r") as fh:
          "License :: OSI Approved :: MIT License",
          "Operating System :: OS Independent",
      ],
+     install_requires=[
+          'requests',
+      ],
  )

@@ -166,6 +166,16 @@ class DripClient(object):
         """Create or update a refund."""
         return self._post('refunds', payload)
 
+    ### Shopper Acvitity###
+
+    def create_or_update_shopper_cart(self, payload):
+        """Create or update a shopper's cart."""
+        return self._post('shopper_activity/cart', payload)
+
+    def create_or_update_shopper_order(self, payload):
+        """Create or update a shopper activity order."""
+        return self._post('shopper_activity/order', payload)
+
     ### Subscribers ###
 
     def create_or_update_subscriber(self, payload):
