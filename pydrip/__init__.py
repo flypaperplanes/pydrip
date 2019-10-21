@@ -110,6 +110,16 @@ class DripClient(object):
         path = 'subscribers/%s/campaign_subscription' % (subscriber_id, )
         return self._get(path)
 
+    def unsubscribe(self, subscriber_id, campaign_id):
+        """Unsubscribe from one campaign"""
+        path = 'subscribers/%s/remove?campaign_id=%s' % (subscriber_id, campaign_id)
+        return self._post(path, subscriber_id)
+
+    def unsubscribe_all(self, subscriber_id):
+        """Unsubscribe from all campaigns"""
+        path = 'subscribers/%s/remove' % (subscriber_id,)
+        return self._post(path, subscriber_id)
+
     ### Custom Fields###
 
     def custom_fields(self):
