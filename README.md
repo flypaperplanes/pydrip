@@ -21,11 +21,11 @@ status, data = drip.subscribers()
 subscribers = data['subscribers']
 
 # Create a Subscriber
-subscriber = {
+subscriber = [
     'subscribers': {[
         { 'email': 'test@test.com' }
     ]}
-}
+]
 
 drip.create_or_update_subscriber(subscriber)
 
